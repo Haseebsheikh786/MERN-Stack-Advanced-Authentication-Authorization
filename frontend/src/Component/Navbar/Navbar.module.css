@@ -1,0 +1,100 @@
+li {
+    padding: 10px 23px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    padding: 0 43px;
+}
+
+.activeStyle {
+    color: #3861fb;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.inactiveStyle {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.login {
+    color: black;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #fdf0f0;
+}
+
+.signup {
+    background-color: #3861fb;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+.signup:hover {
+    background-color: #1f4ffd;
+}
+
+.signout {
+    background-color: #ea3943;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+.signout:hover {
+    background-color: #e01822;
+}
+
+.separator {
+    height: 1px;
+    margin-top: 5px;
+    /* background-color: #1f4ffd; */
+    background: linear-gradient(to right, transparent, #9ba3c2, transparent);
+}
+
+@media only screen and (max-width:991px) {
+    li {
+        padding: 10px 8px;
+    }
+
+    .logo {
+        padding: 0 8px;
+    }
+
+}
