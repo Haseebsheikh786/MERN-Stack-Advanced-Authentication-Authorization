@@ -119,7 +119,15 @@ const login = expressAsyncHandler(async (req, res) => {
       maxAge: 1000 * 60 * 60 * 24,
       httpOnly: true,
     });
-    res.status(200).json({ email, auth, _id: userAvailable._id });
+    res
+      .status(200)
+      .json({
+        _id: userAvailable._id,
+        email: userAvailable.email,
+        username: userAvailable.username,
+        photo: userAvailable.photo,
+        auth,
+      });
   } else {
     auth = false;
     res.status(400).json({ error: "email or password is not valid", auth });
